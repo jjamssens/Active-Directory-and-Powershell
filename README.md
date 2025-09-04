@@ -3,7 +3,8 @@
 Project: My PowerShell & Active Directory Learning Journey
 This repository documents my journey of learning Active Directory and PowerShell by building a virtual lab environment. The goal is to demonstrate my understanding of fundamental concepts and my ability to automate administrative tasks using scripting.
 
-1. The Lab Environment
+The Lab Environment:
+
   I used Hyper-V to create a small virtual network for this project. The environment consists of two virtual machines:
   
   Domain Controller (DC01): A Windows Server 2019 VM acting as the primary domain controller for my new domain.
@@ -18,7 +19,8 @@ This repository documents my journey of learning Active Directory and PowerShell
   
   Windows 10: The operating system for the client machine.
 
-2. Setting Up the Domain Controller
+Setting Up the Domain Controller:
+
   Here are the high-level steps I followed to set up the domain controller:
 
   Virtual Machine Creation: A new virtual machine was created in Hyper-V using a Windows Server 2019 ISO file. I allocated sufficient resources (RAM, vCPUs) to the VM.
@@ -29,7 +31,8 @@ This repository documents my journey of learning Active Directory and PowerShell
   
   Promoting to Domain Controller: The server was promoted to a domain controller, creating a new forest and a new domain.
 
-3. Joining the Client to the Domain
+Joining the Client to the Domain:
+
   After configuring the domain controller, the next step was to join the client machine to the domain. This process involved:
   
   DNS Configuration: I set the client's DNS server to point to the IP address of the domain controller.
@@ -40,7 +43,8 @@ This repository documents my journey of learning Active Directory and PowerShell
   
   This step was critical as it allowed me to test user accounts, group policies, and permissions from a realistic client perspective.
 
-4. Active Directory & PowerShell Scripts
+Active Directory & PowerShell Scripts:
+
   The /scripts directory in this repository contains the PowerShell scripts I created to manage Active Directory objects. Each script is commented to explain its purpose.
   
   Below is a breakdown of what these scripts do:
@@ -61,7 +65,8 @@ This repository documents my journey of learning Active Directory and PowerShell
   
   Get-UserReport.ps1: Generates a report of all users in a specific Organizational Unit (OU), including their status and last logon time.
 
-5. Key Learnings & Reflections
+Key Learnings & Reflections:
+   
   Throughout this project, I've learned the following:
   
   The importance of planning the AD structure (OUs, groups) before scripting.
@@ -74,7 +79,8 @@ This repository documents my journey of learning Active Directory and PowerShell
   
   The process of troubleshooting client-to-domain connectivity issues.
   
-  6. What's Next?
+What's Next?
+
   My next steps will be to explore more advanced topics, including:
   
   Group Policy Objects (GPOs): Using PowerShell to manage and report on GPOs.
